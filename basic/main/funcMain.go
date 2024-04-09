@@ -1,7 +1,7 @@
 package main
 
 import (
-	_func2 "LearnGoWithDemo/LearnFunc/basic/func"
+	_func2 "LearnGoWithDemo/basic/func"
 	"fmt"
 	"math/rand"
 	_ "math/rand" //匿名引入包，只执行包中的init函数，不会执行包中的其他函数
