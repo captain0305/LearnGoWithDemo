@@ -1,7 +1,7 @@
 package main
 
 import (
-	"LearnGoWithDemo/LearnFunc/func"
+	_func2 "LearnGoWithDemo/LearnFunc/basic/func"
 	"fmt"
 	"math/rand"
 	_ "math/rand" //匿名引入包，只执行包中的init函数，不会执行包中的其他函数
@@ -35,13 +35,13 @@ func main() {
 	numbers, i2 := StatRandomNumbers(10)
 	fmt.Println(numbers, i2)
 
-	s, d := _func.SquaresOfSumAndDiff(3, 4)
+	s, d := _func2.SquaresOfSumAndDiff(3, 4)
 	fmt.Println(s, d)
 
-	diff2, i := _func.SquaresOfSumAndDiff2(3, 4)
+	diff2, i := _func2.SquaresOfSumAndDiff2(3, 4)
 	fmt.Println(diff2, i)
 
-	_func.Abc()
+	_func2.Abc()
 
 	fmt.Println("随机数", rand.Int())
 }
