@@ -42,5 +42,5 @@ func Triple(n int) (r int) {
 }
 
 func main() {
-	fmt.Println(Triple(5))
+	deffer1()
 }
