@@ -10,7 +10,7 @@ func TestAdd(t *testing.T) {
 	}{
 		{"add 1+1", 1, 1, 2},
 		{"add 2+3", 2, 3, 5},
-		{"add -1+1", -1, 1, 0},
+		{"add -1+1", -1, 1, 10},
 	}
 
 	for _, tt := range tests {
