@@ -5,13 +5,52 @@ import "fmt"
 func summarize1() {
 	//不可寻址但可以取地址的值
 	pm := &map[string]int{"C": 1972, "Go": 2009}
+	pmm := map[string]int{"C": 1972, "Go": 2009}
 	ps := &[]string{"break", "continue"}
 	pa := &[...]bool{false, true, true, false}
 	fmt.Println(pm, ps, pa)
+
+	(*pm)["C"] = 1974
+	pmm["d"] = 2009
+
 	//格式化换行符
-	fmt.Printf("%T\n", pm) // *map[string]int
-	fmt.Printf("%T\n", ps) // *[]string
-	fmt.Printf("%T\n", pa) // *[4]bool
+	//fmt.Printf("%T\n", pm) // *map[string]int
+	//fmt.Printf("%T\n", ps) // *[]string
+	//fmt.Printf("%T\n", pa) // *[4]bool
+
+	book1 := &Book{100} // book1是一个指针
+	fmt.Println(book1)
+
+	book1.pages = 200
+	a := &book1.pages
+	fmt.Println(a)
+}
+
+type myMap map[string]int
+
+type a int
+
+type mySlice []string
+
+func (mySlice) String() string {
+	return "123"
+
+}
+
+func (myMap) String() string {
+	return "123"
+}
+
+type Book struct {
+	pages int
+}
+
+func (b Book) String() string {
+	return fmt.Sprintf(" Pages: %d", b.pages)
+}
+
+func main() {
+	summarize1()
 }
 
 func summarize2() {
@@ -122,8 +161,4 @@ func summarize5() {
 	fmt.Println(s == nil)       // true
 	a := *new([5]bool)          // <=> var a [5]bool
 	fmt.Println(a == [5]bool{}) // true
-}
-
-func main() {
-	summarize5()
 }

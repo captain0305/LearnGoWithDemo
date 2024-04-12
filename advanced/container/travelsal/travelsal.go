@@ -96,9 +96,23 @@ func travelsal4() {
 	fmt.Println(m)
 }
 
-//复制一个切片和映射代价小，但是复制大尺寸数组代价大
-//核心 for k,v的话 v是一个固定地址值的变量
+// 复制一个切片和映射代价小，但是复制大尺寸数组代价大
+// 核心 for k,v的话 v是一个固定地址值的变量
+func usePointer() {
+	var a [100]int
 
+	for i, n := range &a { // 复制一个指针的开销很小
+
+		n = i
+		fmt.Println(i, n)
+	}
+
+	for i, n := range a[:] { // 复制一个切片的开销很小
+		n = i
+		fmt.Println(i, n)
+	}
+	fmt.Println(a)
+}
 func main() {
-
+	usePointer()
 }
