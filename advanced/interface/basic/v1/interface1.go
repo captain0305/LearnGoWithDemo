@@ -25,7 +25,7 @@ type error interface {
 	Error() string
 }
 
-// 一个新的接口类型，它内嵌了一个接口类型。和上面的等价
+// 一个新的接口类型，它内嵌了一个接口类型。
 type newReadWriteCloser interface {
 	Read(buf []byte) (n int, err error)
 	Write(buf []byte) (n int, err error)
