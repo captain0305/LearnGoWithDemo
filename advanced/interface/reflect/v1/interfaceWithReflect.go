@@ -33,5 +33,4 @@ func main() {
 		[]int{1, 2, 3}, map[int]bool{}, nil,
 	}
 	typeSwitch(values)
-
 }

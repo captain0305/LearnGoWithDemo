@@ -1,7 +1,6 @@
 package main
 
 import (
-	"container/list"
 	"fmt"
 )
 
@@ -17,17 +16,10 @@ func string1() {
 	// 比较字符串。
 	fmt.Println(hello == "hello")   // true
 	fmt.Println(hello > helloWorld) // false
+	hello = "hello world!"
+	fmt.Println(hello == helloWorld) //true
 }
 
 func main() {
-	l := list.List{}
-	l.PushFront(1)
-	fmt.Println(l.Len())
-
-	l.PushFront(2)
-	fmt.Println(l.Len())
-
-	l.Remove(l.Front())
-	fmt.Println(l.Len())
-	//string1()
+	string1()
 }
