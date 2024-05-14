@@ -15,6 +15,7 @@ func (s MySlice[T]) sum() T {
 func sum() {
 	var a MySlice[int] = []int{1, 2, 3, 4, 5}
 	var b MySlice[float64] = []float64{1.1, 2.2, 3.3, 4.4, 5.5}
+	//var c MySlice[string] = []string{"a", "b", "c", "d", "e"}
 
 	fmt.Println(a.sum())
 	fmt.Println(b.sum())

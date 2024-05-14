@@ -17,6 +17,7 @@ func (i Price2) String() string {
 	return string(i)
 }
 
+// 波浪号表示可以是衍生类型
 type ShowPrice interface {
 	String() string
 	~int | ~string

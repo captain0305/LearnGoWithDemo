@@ -34,5 +34,5 @@ func main() {
 	}
 
 	// Format
-	fmt.Printf("%+v\n", user)
+	fmt.Printf("%+v1\n", user)
 }

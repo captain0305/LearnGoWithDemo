@@ -20,9 +20,9 @@ func reflectKind(v interface{}) {
 	case reflect.Float64:
 		fmt.Printf("float64 value is: %f\n", value.Float())
 	case reflect.Slice:
-		fmt.Printf("slice value is: %v\n", value.Slice(0, value.Len()))
+		fmt.Printf("slice value is: %v1\n", value.Slice(0, value.Len()))
 	default:
-		fmt.Printf("defaule type is: %v\n", value)
+		fmt.Printf("defaule type is: %v1\n", value)
 	}
 }
 

@@ -50,11 +50,11 @@ func main() {
 	myI2 = myI2St
 
 	a, aOk := myI1.(i1)
-	fmt.Printf("a, aOk := myI1.(i1) is return %v,%t,type is %T\n", a, aOk, a)
+	fmt.Printf("a, aOk := myI1.(i1) is return %v1,%t,type is %T\n", a, aOk, a)
 	b, bOk := myI1.(i2)
-	fmt.Printf("b, bOk := myI1.(i2) is return %v,%t,type is %T\n", b, bOk, b)
+	fmt.Printf("b, bOk := myI1.(i2) is return %v1,%t,type is %T\n", b, bOk, b)
 	c, cOk := myI2.(i1)
-	fmt.Printf("c, cOk := myI2.(i1) is return %v,%t,type is %T\n", c, cOk, c)
+	fmt.Printf("c, cOk := myI2.(i1) is return %v1,%t,type is %T\n", c, cOk, c)
 	d, dOk := myI2.(i2)
-	fmt.Printf("d, dOk := myI2.(i2) is return %v,%t,type is %T\n", d, dOk, d)
+	fmt.Printf("d, dOk := myI2.(i2) is return %v1,%t,type is %T\n", d, dOk, d)
 }

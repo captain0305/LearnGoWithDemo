@@ -38,4 +38,6 @@ func main() {
 	printArray(strs)
 
 	printArray(ints)
+
+	printArray2(strs)
 }
