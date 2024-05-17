@@ -16,8 +16,6 @@ func recover1() {
 		fmt.Println("恐慌被恢复了：", v)
 	}()
 	panic("拜拜！") // 产生一个恐慌
-
-	//恐慌后的代码不会执行，程序崩溃
 	fmt.Println("执行不到这里")
 }
 
@@ -35,16 +33,15 @@ func recover2() {
 		}()
 		time.Sleep(time.Second)
 		panic(123)
-		//恐慌后的代码不会执行，程序崩溃
 		fmt.Println("执行不到这里")
 
 	}()
 
 	time.Sleep(10 * time.Second)
-
+	fmt.Println("能执行到这里")
 }
 
 func main() {
-	//recover1()
+	recover1()
 	recover2()
 }
