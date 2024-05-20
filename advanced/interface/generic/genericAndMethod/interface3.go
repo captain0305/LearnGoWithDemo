@@ -34,5 +34,5 @@ func ShowPriceList[T ShowPrice](s []T) (ret []string) {
 func main() {
 
 	fmt.Println(ShowPriceList([]Price{1, 2, 3, 4, 5}))
-	fmt.Println(ShowPriceList([]Price2{"a", "b", "c", "d"}))
+	fmt.Println(ShowPriceList([]Price2{"a", "demo", "c", "d"}))
 }

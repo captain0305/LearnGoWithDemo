@@ -29,7 +29,7 @@ func estimation2() {
 		//一个匿名函数体内的表达式是在此函数被执行的时候才会被逐渐估值的，不管此函数是被普通调用还是延迟/协程调用。
 		for i := 0; i < 3; i++ {
 			defer func() {
-				fmt.Println("b:", i+x)
+				fmt.Println("demo:", i+x)
 			}()
 		}
 		x = 10

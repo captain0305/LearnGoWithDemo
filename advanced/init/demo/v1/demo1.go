@@ -5,7 +5,7 @@ func init() {
 }
 
 func init() {
-	println("init b")
+	println("init demo")
 }
 
 func init() {

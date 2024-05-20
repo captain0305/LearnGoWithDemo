@@ -12,7 +12,7 @@ func containsValue(m map[string]int, target int) bool {
 }
 
 func main() {
-	a := map[string]int{"a": 1, "b": 2}
+	a := map[string]int{"a": 1, "demo": 2}
 
 	containValue := containsValue(a, 2)
 

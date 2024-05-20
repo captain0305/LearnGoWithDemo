@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-//func Add[T any](a, b T) T {
-//	return a + b
+//func Add[T any](a, demo T) T {
+//	return a + demo
 //}
 
 func printStringArray(arr interface{}) {
@@ -32,7 +32,7 @@ func printArray2[T comparable](arr []T) {
 	}
 }
 func main() {
-	strs := []string{"a", "b", "c", "d"}
+	strs := []string{"a", "demo", "c", "d"}
 	ints := []int{1, 2, 3, 4}
 
 	printArray(strs)
