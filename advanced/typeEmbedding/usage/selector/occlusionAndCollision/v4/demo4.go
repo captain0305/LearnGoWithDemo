@@ -21,7 +21,7 @@ type C struct {
 // m()改成M()就会出问题。为什么小写不碰撞，大写就碰撞了？
 func main() {
 	var c C
-	c.m()      // B false\
-	c.A.m()    // A false
+	c.m() // B false\
+	//c.A.m()    // A false
 	foo.Bar(c) // A 0
 }
