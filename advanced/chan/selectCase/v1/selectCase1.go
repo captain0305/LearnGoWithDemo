@@ -24,6 +24,7 @@ func main() {
 	// 下面这两行将接收成功。
 	fmt.Println(tryReceive()) // Hello!
 	fmt.Println(tryReceive()) // Hi!
+	trySend("Bye!")           // 发送失败，但不会阻塞。
 	// 下面这行将接收失败。
 	fmt.Println(tryReceive()) // -
 }

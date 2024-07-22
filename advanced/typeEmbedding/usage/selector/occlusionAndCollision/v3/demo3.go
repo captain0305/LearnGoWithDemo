@@ -27,8 +27,8 @@ func main() {
 		A
 		B
 	}
-	//_ = v.x // error: 模棱两可的v.x
-	//_ = v.y // error: 模棱两可的v.y
-	_ = v.M // ok. <=> v.A.x.M
-	_ = v.z // ok. <=> v.B.y.z
+	//_ = escape.x // error: 模棱两可的v.x
+	//_ = escape.y // error: 模棱两可的v.y
+	_ = v.M // ok. <=> escape.A.x.M
+	_ = v.z // ok. <=> escape.B.y.z
 }

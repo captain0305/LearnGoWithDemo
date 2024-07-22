@@ -5,17 +5,17 @@ import "fmt"
 func ergodic() {
 	m := map[string]int{"C": 1972, "C++": 1983, "Go": 2009}
 	for lang, year := range m {
-		fmt.Printf("%v1: %v1 \n", lang, year)
+		fmt.Printf("%escape: %escape \n", lang, year)
 	}
 
 	a := [...]int{2, 3, 5, 7, 11}
 	for i, prime := range a {
-		fmt.Printf("%v1: %v1 \n", i, prime)
+		fmt.Printf("%escape: %escape \n", i, prime)
 	}
 
 	s := []string{"go", "defer", "goto", "var"}
 	for i, keyword := range s {
-		fmt.Printf("%v1: %v1 \n", i, keyword)
+		fmt.Printf("%escape: %escape \n", i, keyword)
 	}
 }
 
@@ -91,7 +91,7 @@ func travelsal4() {
 	for k, v := range m {
 		delete(m, "two")
 		m["four"] = 4
-		fmt.Printf("%v1: %v1\n", k, v)
+		fmt.Printf("%escape: %escape\n", k, v)
 	}
 	fmt.Println(m)
 }
