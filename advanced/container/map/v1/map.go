@@ -42,8 +42,24 @@ func map3() {
 	m["Go"] = 2009    // 修改
 	delete(m, "Java") // 删除
 	fmt.Println(m)    // map[C:1972 Go:2009]
-
 }
+
+type countStruct struct {
+	countCore    int64
+	countNotCore int64
+	projID       int32
+	dimID        int32
+}
+
 func main() {
-	map3()
+	var a map[int]string
+	a = make(map[int]string)
+	a[1] = "123"
+	a[2] = "321"
+	a[3] = "adsf"
+	c := new(countStruct)
+	fmt.Println(c.countCore, c.countNotCore)
+	for key, value := range a {
+		fmt.Println(key, value)
+	}
 }

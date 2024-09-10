@@ -11,6 +11,7 @@ func for1() {
 	for i < 10 {
 		fmt.Println(i)
 		i++
+
 	}
 	for i < 20 {
 		fmt.Println(i)
